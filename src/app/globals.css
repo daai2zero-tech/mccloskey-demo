@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700;900&family=Inter:wght@400;500&display=swap');
+
+@theme inline {
+  --color-charcoal: #1a1a2e;
+  --color-amber: #d4a017;
+  --color-offwhite: #f5f0e8;
+  --color-steel: #4a4a5a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1a1a2e;
+  font-family: 'Inter', sans-serif;
+  color: #f5f0e8;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter Tight', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4a017;
+}
+
+/* Carousel drag cursor */
+.carousel-track {
+  cursor: grab;
+}
+.carousel-track:active {
+  cursor: grabbing;
+}
+
+/* Count-up animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stat-animate {
+  animation: countUp 0.5s ease forwards;
+}
