@@ -200,14 +200,14 @@ function Hero() {
         </div>
 
         {/* Stats row */}
-        <div style={{ display: 'flex', gap: '48px', flexWrap: 'wrap' }}>
+        <div className="stats-grid-mc">
           {[
             { value: '36', label: 'Years Trading' },
             { value: '500+', label: 'Projects Completed' },
             { value: '12', label: 'Crew Members' },
             { value: 'NHBC', label: 'Registered' },
           ].map(stat => (
-            <div key={stat.label}>
+            <div key={stat.label} className="stat-item-mc">
               <div style={{
                 fontFamily: "'Inter Tight', sans-serif",
                 fontWeight: 900,
@@ -333,7 +333,7 @@ function StatsBar() {
 // ─── Testimonial ───────────────────────────────────────────────────────────────
 function Testimonial() {
   return (
-    <section id="testimonials" style={{ background: '#1a1a2e', padding: '120px 24px', textAlign: 'center' }}>
+    <section id="testimonials" className="section-pad" style={{ background: '#1a1a2e', textAlign: 'center' }}>
       <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative' }}>
         {/* Decorative quote mark */}
         <div style={{
@@ -507,12 +507,7 @@ function Footer() {
         margin: '0 auto',
         padding: '80px 24px 48px',
       }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-          gap: '48px',
-          marginBottom: '64px',
-        }}>
+        <div className="footer-grid-mc" style={{ marginBottom: '64px' }}>
           {/* Col 1 — Contact */}
           <div>
             <div style={{ marginBottom: '32px' }}>
@@ -662,14 +657,9 @@ function Footer() {
         </div>
 
         {/* Copyright bar */}
-        <div style={{
+        <div className="footer-bottom-mc" style={{
           borderTop: '1px solid rgba(245,240,232,0.08)',
           paddingTop: '24px',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '12px',
         }}>
           <p style={{
             fontFamily: "'Inter', sans-serif",

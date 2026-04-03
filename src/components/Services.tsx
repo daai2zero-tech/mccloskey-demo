@@ -63,11 +63,7 @@ export default function Services() {
         </div>
 
         {/* Services grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          gap: '2px',
-        }}>
+        <div className="services-grid-mc">
           {services.map((service, index) => {
             const isHovered = hoveredIndex === index
             return (

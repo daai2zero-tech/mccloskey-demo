@@ -271,9 +271,9 @@ export default function ProjectCarousel() {
         {projects.map((project, i) => (
           <div
             key={i}
+            className="carousel-card"
             style={{
               flexShrink: 0,
-              width: `${cardWidth}px`,
               overflow: 'hidden',
             }}
           >
