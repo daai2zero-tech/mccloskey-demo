@@ -69,7 +69,7 @@ function ProjectPlaceholder({ project, height }: { project: typeof projects[0]; 
         right: '15%',
         width: '3px',
         height: '140%',
-        background: `linear-gradient(180deg, transparent 0%, ${project.accentColor} 40%, transparent 100%)`,
+        background: `linear-gradient(180deg, transparent 0%, #f97316 40%, transparent 100%)`,
         opacity: 0.4,
         transform: 'rotate(20deg)',
       }} />
